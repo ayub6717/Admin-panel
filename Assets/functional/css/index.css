@@ -1,0 +1,19 @@
+/* <!-- ====================Head start=============== --> */
+.headimg{
+    width: 130px;
+}
+/* <!-- ====================Head start End=============== --> */
+
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #1d2124 !important;
+    background-color: #E5ECF2 !important;
+}
+.nav-link {
+    color: #1d2124 !important;
+}
+
+.ColHr{
+    border-right: 1px solid gray;
+}
