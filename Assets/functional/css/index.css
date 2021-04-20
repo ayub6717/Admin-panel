@@ -16,4 +16,147 @@
 
 .ColHr{
     border-right: 1px solid gray;
+    
 }
+
+
+
+
+
+/* <!-- ====================Head start=============== --> */
+
+
+.logImg{
+    width: 80%;
+}
+
+.logbac{
+    background-image: linear-gradient(130deg,#F03A24,#F57C1F);
+    padding: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.logbac p{
+    float: right;
+}
+.logbac h1{
+    float: left;
+    margin-top: -32px;
+    margin-bottom: 30px;
+}
+
+.logbac .fa{
+    /* background-image: linear-gradient(130deg,#F03A24,#F57C1F); */
+    color:  #F03A24;
+    font-size: 19px;
+
+}
+
+.logbac button {
+    color: white;
+    font-size: larger;
+}
+
+.form-group.form-check {
+    padding-left: 0px !important;
+}
+
+input.form-control {
+    border-radius: 2.25rem;
+}
+span.input-group-text {
+    border-radius: 1.25rem;
+    background-color: white;
+}
+
+.ConPad{
+    padding: 70px;
+}
+
+/* <!-- ====================Head start End=============== --> */
+
+
+@font-face {
+    font-family: 'Bauhaus Md BT';
+    src: url("../../Fonts/BAUHAUSB.TTF") format("opentype");
+  }
+  
+  
+  
+  .vendorDash{
+    /* text-align: center; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 2px 18px 0 rgba(0, 0, 0, 0.034);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+                                                  
+  }
+  
+  .vendorDash1{
+    background-image: linear-gradient(130deg,#33C5D2,#499c56);
+
+    /* background-color: #2EBC4C; */
+  }
+  .vendorDash2{
+    background-image: linear-gradient(130deg,#7ce9f3,#155f66);
+
+  }
+  .vendorDash3{
+    background-image: linear-gradient(130deg,#aa64c5,#4a2758);
+  }
+  
+  .vendorDash4{
+    background-image: linear-gradient(130deg,#c4baba,rgb(43, 81, 153));
+  }
+  .vendorDash5{
+    background-image: linear-gradient(130deg,#F03A24,#7a146d);
+
+  }
+  .vendorDash6{
+    background-image: linear-gradient(130deg,#98d486,#855d73);
+  }
+
+  .vendorDash7{
+    background-image: linear-gradient(130deg,#24e2f0,#134681);
+  }
+
+  .vendorDash8{
+    background-image: linear-gradient(130deg,#178b8b,#9c6d96);
+  }
+
+  .vendorDash9{
+    background-image: linear-gradient(130deg,#178b8b,#7a146d);
+  }
+  .vendorDash10{
+    background-image: linear-gradient(130deg,#178b8b,#2c7a14);
+  }
+  .vendorDash11{
+    background-image: linear-gradient(130deg,#4265ff,#147a4a);
+  }
+  .vendorDash12{
+    background-image: linear-gradient(130deg,#0491aa,#d43131);
+  }
+  
+  .vendorDash h1{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Bauhaus Md BT';
+  }
+  
+  
+  
+  .vendorDash h6{
+    text-align: center;
+  }
+  
+  .vendorDash p{
+    float: right;
+    font-size: large;
+    padding-right: 27px;
+    margin-bottom: -2px;
+  }
+  
