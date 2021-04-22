@@ -83,6 +83,10 @@ span.input-group-text {
 /* <!-- ====================Head start End=============== --> */
 
 
+  /* ===================Start Dashboard====================== */
+
+
+
 @font-face {
     font-family: 'Bauhaus Md BT';
     src: url("../../Fonts/BAUHAUSB.TTF") format("opentype");
@@ -165,3 +169,24 @@ span.input-group-text {
     margin-bottom: -2px;
   }
   
+  /* ===================End Dashboard====================== */
+
+    /* ===================Start HRM====================== */
+
+
+  .TabImg{
+    width: 80px;
+  }
+
+  .DataOne input.form-control {
+    border-radius: .25rem;
+  }
+
+
+
+
+
+
+
+
+      /* ===================End HRM====================== */
