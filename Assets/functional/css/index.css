@@ -186,6 +186,13 @@ span.input-group-text {
     border-radius: .25rem;
 }
 
+.DataTwo input.form-control {
+  border-radius: .25rem !important;
+}
+
+.DataTwo span.input-group-text {
+  border-radius: .25rem !important;
+}
 
 
 

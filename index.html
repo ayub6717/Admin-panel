@@ -26,6 +26,7 @@
         <h4>
             Request <span className="RequestSpan">.</span> Admin Account
         </h4> <br>
+
         <div class="row">
             <div class="col-sm-3 ColHr">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -483,7 +484,7 @@
                                         <div class="form-group col-md-6">
                                             <label for="inputState"><b>Delevary Point*</b></label>
                                             <select id="inputState" class="form-control">
-                                                <option selected>At Home</option>
+                                                <option selected>At ViewAll</option>
                                                 <option>At Office</option>
                                             </select>
                                         </div>
@@ -627,9 +628,229 @@
 
                     </div>
 
+                    <!-- Modal For User Management View -->
+                    <div class="modal fade" id="exampleModalViewTwo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalViewTwoLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body DataOne">
+                                    <div class="container">
+                                        <form>
+                                            <div class="form-row">
+                                                <div style="text-align: center;" class="form-group col-md-6">
+                                                    <img style="width: 150px;" src="Assets/img/Ayub.jpg" alt=""> <br>
+                                                    <label for="inputEmail4"><b>Arif Bin Saaz</b></label> <br>
+                                                </div>
+
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail4"><b>Name:</b></label>
+                                                    <label for="inputEmail4"><b></b>Arif Bin Saaz</b></label>
+                                                    <br>
+                                                    <label for="inputEmail4"><b>Compnay Name:</b></label>
+                                                    <label for="inputEmail4">Amader Service</label><br>
+                                                    <label for="inputEmail4"><b>Occupation:</b></label>
+                                                    <label for="inputEmail4">Manager</label><br>
+                                                    <label for="inputEmail4"><b>Phone No:</b></label>
+                                                    <label for="inputEmail4">01731357111</label><br>
+                                                    <label for="inputEmail4"><b>Email Address:</b></label>
+                                                    <label for="inputEmail4">Arif@gmail.com</label><br>
+                                                    <label for="inputEmail4"><b>Gender:</b></label>
+                                                    <label for="inputEmail4">Male</label><br>
+                                                    <label for="inputEmail4"><b>Location Zone:</b></label>
+                                                    <label for="inputEmail4">Uttara</label><br>
+                                                    <label for="inputEmail4"><b>Address:</b></label>
+                                                    <label for="inputEmail4">Uttara,Dhaka</label><br>
+                                                    <label for="inputEmail4"><b>Description:</b></label>
+                                                    <label for="inputEmail4">Null</label>
+                                                </div>
+
+                                                <div
+                                                    style="text-align: center; border: 1px solid black; height: 150px; width: 100%;">
+                                                    <p style="margin-top: 60px;">[User Service history, pendings will be
+                                                        shown here]</p>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br> <br>
+
+
+
                     <div class="tab-pane fade" id="UserManagement" role="tabpanel"
-                        aria-labelledby="v-pills-UserManagement-tab">
-                        <h1>Comming Soon User Management...</h1>
+                        aria-labelledby="v-pills-UserManagement-tab"> <br>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-ViewAll-tab" data-toggle="pill"
+                                    href="#pills-ViewAll" role="tab" aria-controls="pills-ViewAll"
+                                    aria-selected="true"><b>View All</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-AdddNew-tab" data-toggle="pill" href="#pills-AdddNew"
+                                    role="tab" aria-controls="pills-AdddNew" aria-selected="false"><b>Add New</b></a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-ViewAll" role="tabpanel"
+                                aria-labelledby="pills-ViewAll-tab">
+                                <table class="table table-bordered table-striped table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th>SL No</th>
+                                            <th>User Name</th>
+                                            <th>Contact No</th>
+                                            <th>Created By</th>
+                                            <th>Created At</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Arif bin Saaz</td>
+                                            <td>0161413365</td>
+                                            <td>Own</td>
+                                            <td>25-04-21</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-success dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalViewTwo">View</a>
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-AdddNew" role="tabpanel"
+                                aria-labelledby="pills-AdddNew-tab">
+                                <div class="container DataTwo">
+                                    <form>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Name</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Company Name</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Company Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Occupation</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Occupation">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Phone No</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Phone No">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Email Address</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Email Address">
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Gender</b></label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Male</option>
+                                                    <option>Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Location Zone</b></label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Dhaka</option>
+                                                    <option>....</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Address</b></label>
+                                                <input type="email" class="form-control" id="inputEmail4"
+                                                    placeholder="Enter Address">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4"><b>Image</b></label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"
+                                                            id="inputGroupFileAddon01">Upload</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="inputGroupFile01"
+                                                            aria-describedby="inputGroupFileAddon01">
+                                                        <label class="custom-file-label" for="inputGroupFile01">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">
+                                                Note
+                                            </label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-success">Submit</button><br> <br><br>
+
+                                        
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane fade" id="VendorManagement" role="tabpanel"
@@ -828,6 +1049,64 @@
                                     </div>
                                 </div> <br> <br>
 
+
+
+                                <!-- Modal for HRM VIEW -->
+                                <div class="modal fade" id="exampleModalView" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalViewLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-md" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body DataOne">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div style="text-align: center;"
+                                                                class="form-group col-md-6">
+                                                                <img style="width: 150px;" src="Assets/img/Ayub.jpg"
+                                                                    alt=""> <br>
+                                                                <label for="inputEmail4"><b>Rudro Ahsan</b></label> <br>
+                                                            </div>
+
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputEmail4"><b>User Name:</b></label>
+                                                                <label for="inputEmail4"><b></b>Rudro6717</b></label>
+                                                                <br>
+                                                                <label for="inputEmail4"><b>Departmen:</b></label>
+                                                                <label for="inputEmail4">IT</label><br>
+                                                                <label for="inputEmail4"><b>Password:</b></label>
+                                                                <label for="inputEmail4">12345678</label><br>
+                                                                <label for="inputEmail4"><b>Email:</b></label>
+                                                                <label for="inputEmail4">rudro@gmail.com</label><br>
+                                                                <label for="inputEmail4"><b>Role:</b></label>
+                                                                <label for="inputEmail4">Admin</label><br>
+                                                                <label for="inputEmail4"><b>Phone No:</b></label>
+                                                                <label for="inputEmail4">01731357111</label><br>
+                                                                <label for="inputEmail4"><b>Address:</b></label>
+                                                                <label for="inputEmail4">banani, Dhaka</label><br>
+                                                                <label for="inputEmail4"><b>Ciry:</b></label>
+                                                                <label for="inputEmail4">Dhaka</label><br>
+                                                                <label for="inputEmail4"><b>Country:</b></label>
+                                                                <label for="inputEmail4">Bangladesh</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <br> <br>
+
                                 <table class="table table-bordered table-striped table-responsive-md">
                                     <thead>
                                         <tr>
@@ -861,7 +1140,8 @@
 
                                             </td>
                                             <td>
-                                                <img class="TabImg" src="Assets/img/Ayub.jpg" alt="">
+                                                <img style="width: 80px;" class="TabImg" src="Assets/img/Ayub.jpg"
+                                                    alt="">
                                             </td>
                                             <td>Rudro</td>
                                             <td>rudro990@gmail.com</td>
@@ -876,7 +1156,8 @@
                                                         Action
                                                     </button>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#">View</a>
+                                                        <a class="dropdown-item" href="#" data-toggle="modal"
+                                                            data-target="#exampleModalView">View</a>
                                                         <a class="dropdown-item" href="#">Edit</a>
                                                         <a class="dropdown-item" href="#">Delete</a>
                                                     </div>
@@ -946,8 +1227,7 @@
                                 aria-labelledby="Departments-tab">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input type="email" class="form-control"
-                                            id="inputEmail4" placeholder="">
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <button type="submit" class="btn btn-success">Add New</button>
@@ -995,28 +1275,28 @@
 
                                         <tr>
 
-                                        <td>
-                                            1
-                                        </td>
+                                            <td>
+                                                1
+                                            </td>
 
-                                        <td>
-                                            IT
-                                        </td>
+                                            <td>
+                                                IT
+                                            </td>
 
-                                        <td>2</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-success dropdown-toggle" type="button"
-                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Action
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">Edit</a>
-                                                    <a class="dropdown-item" href="#">Delete</a>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-success dropdown-toggle" type="button"
+                                                        id="dropdownMenuButton" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
+                                            </td>
 
                                         </tr>
 
