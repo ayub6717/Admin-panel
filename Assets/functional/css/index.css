@@ -63,16 +63,16 @@
     padding-left: 0px !important;
 }
 
-input.form-control {
+/* input.form-control {
     border-radius: 2.25rem;
-}
+} */
 
-.Data input.form-control {
+/* .Data input.form-control {
   border-radius: .25rem;
-}
+} */
 
 span.input-group-text {
-    border-radius: 1.25rem;
+    /* border-radius: 1.25rem; */
     background-color: white;
 }
 
@@ -178,7 +178,7 @@ span.input-group-text {
     width: 80px;
   }
 
-  .DataOne input.form-control {
+  /* .DataOne input.form-control {
     border-radius: .25rem;
   }
 
@@ -192,7 +192,7 @@ span.input-group-text {
 
 .DataTwo span.input-group-text {
   border-radius: .25rem !important;
-}
+} */
 
 
 
