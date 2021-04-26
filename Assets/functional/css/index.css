@@ -178,6 +178,21 @@ span.input-group-text {
     width: 80px;
   }
 
+  .taka h1{
+    font-family: 'Bauhaus Md BT';
+    line-height: 50px;
+    margin-bottom: -8px;
+  }
+  .taka p{
+    color: red;
+    margin-bottom: -2px;
+
+  }
+  .taka h5{
+    color: red;
+  }
+
+
   /* .DataOne input.form-control {
     border-radius: .25rem;
   }

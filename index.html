@@ -1703,12 +1703,13 @@
                     </div>
 
                     <div class="tab-pane fade" id="Accounting" role="tabpanel" aria-labelledby="v-pills-Accounting-tab">
-                        <h1>Comming Soon Accounting....</h1>
 
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-AddNew-tab" data-toggle="pill" href="#AddNew"
-                                    role="tab" aria-controls="pills-AddNew" aria-selected="true"><b>Add New</b></a>
+                                <a class="nav-link active" id="pills-AddNewPart-tab" data-toggle="pill"
+                                    href="#pills-AddNewPart" role="tab" aria-controls="pills-AddNewPart"
+                                    aria-selected="true"><b>Add New</b></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-Statements-tab" data-toggle="pill"
@@ -1726,11 +1727,10 @@
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-AddNew" role="tabpanel"
-                                aria-labelledby="pills-AddNew-tab">
-
-
-                                <div style="border:2px solid rgb(212, 200, 200); border-radius: 10px;" class="container DataTwo"><br>
+                            <div class="tab-pane fade show active" id="pills-AddNewPart" role="tabpanel"
+                                aria-labelledby="pills-AddNewPart-tab">
+                                <div style="border:2px solid rgb(212, 200, 200); border-radius: 10px;"
+                                    class="container DataTwo"><br>
                                     <h3>Add Cash In:</h3> <br>
                                     <form>
 
@@ -1776,7 +1776,8 @@
                                     </form>
                                 </div> <br>
 
-                                <div style="border:2px solid rgb(212, 200, 200); border-radius: 10px;" class="container DataTwo"> <br>
+                                <div style="border:2px solid rgb(212, 200, 200); border-radius: 10px;"
+                                    class="container DataTwo"> <br>
                                     <h3>Add Cash out:</h3> <br>
                                     <form>
 
@@ -1821,15 +1822,139 @@
 
                                     </form>
                                 </div> <br> <br>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="pills-Statements" role="tabpanel"
+                                aria-labelledby="pills-Statements-tab">
+                                <table class="table table-bordered table-striped table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th>Transc. ID</th>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Cash Out</th>
+                                            <th>Cash In</th>
+                                            <th>Balance</th>
 
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>26th Apr, 2021 11:02 AM</td>
+                                            <td>2625.00 BDT Creadited for order ID:D-500456-55</td>
+                                            <td></td>
+                                            <td>2340.00</td>
+                                            <td>
+                                                388.02
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>26th Apr, 2021 11:02 AM</td>
+                                            <td>2625.00 BDT Creadited for order ID:D-500456-55</td>
+                                            <td></td>
+                                            <td>2340.00</td>
+                                            <td>
+                                                388.02
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
 
                             </div>
-                            <div class="tab-pane fade" id="pills-Statements" role="tabpanel"
-                                aria-labelledby="pills-Statements-tab">Statements</div>
                             <div class="tab-pane fade" id="pills-Income" role="tabpanel"
-                                aria-labelledby="pills-Income-tab">Income</div>
+                                aria-labelledby="pills-Income-tab">
+                                <button type="submit" class="btn btn-success">Add Income</button><br> <br>
+                                <table class="table table-bordered table-striped table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th>Transc. ID</th>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Cash Out</th>
+                                            <th>Cash In</th>
+                                            <th>Revenew</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>26th Apr, 2021 </td>
+                                            <td>Rupayan City glass cleaning</td>
+                                            <td>2000</td>
+                                            <td>1500</td>
+                                            <td>
+                                                500
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>26th Apr, 2021 </td>
+                                            <td>Rupayan City glass cleaning</td>
+                                            <td>2000</td>
+                                            <td>1500</td>
+                                            <td>
+                                                500
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
                             <div class="tab-pane fade" id="pills-Wallet" role="tabpanel"
-                                aria-labelledby="pills-Wallet-tab">Wallet</div>
+                                aria-labelledby="pills-Wallet-tab">
+                                <div class="taka">
+                                    <p>Wallet Status:</p>
+                                    <h1>৳2,543</h1>
+                                    <h5>Current Balance</h5> <br>
+                                </div>
+                                <table class="table table-bordered table-striped table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th>Vendor ID</th>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Wallet Balance</th>
+                                            <th>Total Withdraw</th>
+                                            <th>Total Commission</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>Mridul Ghosh Shushanto </td>
+                                            <td>Uttara, Dhaka</td>
+                                            <td>2000</td>
+                                            <td>1500</td>
+                                            <td>
+                                                500
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2410060</td>
+                                            <td>Mridul Ghosh Shushanto </td>
+                                            <td>Uttara, Dhaka</td>
+                                            <td>2000</td>
+                                            <td>1500</td>
+                                            <td>
+                                                500
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table> <br> <br>
+                            </div>
                         </div>
                     </div>
                 </div>
